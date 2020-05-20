@@ -8,7 +8,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## Instruções para entregar seu projeto:
 
-### ANTES DE COMEÇAR A DESENVOLVER:
+### 🗒ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
   * `git clone https://github.com/tryber/sd-0x-block5-project-meme-generator.git`.
@@ -43,7 +43,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
 5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin joaozinho-project-meme-generator`
+  * Usando o exemplo anterior: `git push -u origin joaozinho-meme-generator-project`
 
 6. Crie um novo `Pull Request` _(PR)_
   * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-block5-project-meme-generator/pulls)
@@ -58,25 +58,79 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 # Entregáveis
 
-Para entregar o seu projeto você deverá criar um Pull Request neste repositório. Este Pull Request deverá conter os arquivos `index.html`, `style.css` e `script.js`, que conterão seu código HTML, CSS e JavaScript, respectivamente. Você pode adicionar outros arquivos se julgar necessário. ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
+Para entregar o seu projeto você deverá criar um Pull Request neste repositório.
 
-Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso conteúdo sobre Git & GitHub sempre que quiser!
+Este Pull Request deverá conter os arquivos `index.html`, `style.css` e `script.js`, que conterão seu código HTML, CSS e JavaScript, respectivamente.
+
+## ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
+
+Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a monitoria.
+
+Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
+
+---
 
 ## Requisitos do projeto
 
-A seguir, estão listados todos os requisitos do projeto. Leia-os atentamente e siga à risca o que for pedido. Em particular, **atente-se para os nomes de ids que alguns elementos de seu projeto devem possuir**. O não cumprimento de um requisito, total ou parcialmente, impactará em sua avaliação.
+A seguir, estão listados os requisitos do projeto.
 
-Os requisitos do seu projeto são avaliados automaticamente, sendo utilizada a resolução `1366 x 768` (1366 pixels de largura por 768 pixels de altura). Logo, recomenda-se desenvolver seu projeto usando a mesma resolução, via instalação [deste plugin](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=en) do `Chrome` para facilitar a configuração dessa resolução.
+## ⚠️ Leia-os atentamente e siga à risca o que for pedido. Em particular, **atente-se para os nomes de _ids_ que alguns elementos de seu projeto devem possuir**. ⚠️
 
-Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na forma de aperfeiçoamentos em requisitos propostos ou novas funcionalidades, **desde que tais comportamentos adicionais não conflitem com os requisitos propostos**. Em outras palavras, você pode fazer mais do que for pedido, mas nunca menos. Contudo, tenha em mente que **nada além do que for pedido nos requisitos será avaliado**. Esta é uma oportunidade de você exercitar sua criatividade e experimentar com os conhecimentos adquiridos.
+O não cumprimento de um requisito, total ou parcialmente, impactará em sua avaliação.
 
-Você deve criar um site que permita o upload de uma imagem e a inserção de um texto sobre ela, estilizado de forma apropriada. Em outras palavras, um meme generator. Abaixo seguem os requisitos:
+---
 
-### 1 - O site deve possuir uma caixa de texto com a qual quem usa pode interagir para inserir texto em cima da imagem escolhida. As seguintes verificações serão feitas:
-- A caixa onde o texto é inserido deve ter um id denominado 'text-input'.
+### 👀Observações importantes:
+
+* Os requisitos do seu projeto são avaliados automaticamente, sendo utilizada a resolução de tela de `1366 x 768` (1366 pixels de largura por 768 pixels de altura).
+
+  * #### ⚠️ Logo, recomenda-se desenvolver seu projeto usando a mesma resolução, via instalação [deste plugin](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=en) do `Chrome` para facilitar a configuração da resolução. ⚠️
+
+* Atente-se para o tamanho das imagens que você utilizará neste projeto. **Não utilize imagens com um tamanho maior que _500Kb_.**
+  * #### ⚠️ Utilize uma ferramenta [como esta](https://picresize.com/pt) para redimensionar as imagens. ⚠️
+
+  * Caso a avaliação falhe com alguma mensagem de erro parecida com `[409:0326/130838.878602:FATAL:memory.cc(22)] Out of memory. size=4194304`, provavelmente as imagens que você está utilizando estão muito grandes. Tente redimensiona-las para um tamanho menor.
+
+* Para verificar se a sua avaliação foi computada com sucesso, você pode verificar os **detalhes da execução do avaliador**.
+
+  * Na página do seu _Pull Request_, acima do "botão de merge", procure por _**"Evaluator job"**_ e clique no link _**"Details"**_;
+
+  * Na página que se abrirá, procure pela linha _**"Cypress evaluator step"**_ e clique nela;
+
+  * Analise os resultados a partir da mensagem _**"(Run Starting)"**_;
+
+  * Caso tenha dúvidas, consulte [este vídeo](https://vimeo.com/420861252) ou procure a monitoria.
+
+
+* Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na forma de aperfeiçoamentos em requisitos propostos ou novas funcionalidades, **desde que tais comportamentos adicionais não conflitem com os requisitos propostos**.
+
+  * Em outras palavras, você pode fazer mais do que for pedido, mas nunca menos.
+
+* Contudo, tenha em mente que **nada além do que for pedido nos requisitos será avaliado**. _Esta é uma oportunidade de você exercitar sua criatividade e experimentar com os conhecimentos adquiridos._
+
+---
+
+## Abaixo seguem os requisitos:
+
+
+* Você deve criar um site que permita o upload de uma imagem e a inserção de um texto sobre ela, estilizado de forma apropriada.
+
+ **Em outras palavras, um meme generator.** 😜
+
+
+### 1 - O site deve possuir uma caixa de texto com a qual quem usa pode interagir para inserir texto em cima da imagem escolhida.
+
+As seguintes verificações serão feitas:
+
+- A caixa onde o texto é inserido deve ter um **id** denominado **'text-input'**.
+
 - O elemento da imagem do meme deve ter um elemento pai com um id denominado 'meme-image-container'. Esse elemento é o container dentro do qual a imagem deverá aparecer.
+
 - O elemento do texto deve estar totalmente contido dentro do container.
+
 - Se não houver imagem inserida, ele deve ser inserido e estar visível dentro do container vazio onde a imagem aparecerá.
+
+---
 
 ### 2 - O site deve permitir que quem usa faça upload de uma imagem de seu computador.
 - O elemento da imagem deve possuir um id chamado 'meme-image'.
