@@ -190,6 +190,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
   * Um botão com `id` chamado `earth` deve estilizar o container da imagem com uma borda do tipo _groove_, verde e com 6 pixels.
 
+- Após uma das três bordas ser selecionada, a borda padrão especificada no requisito 3 não deve mais aparecer;
 
 ### 7 - Tenha um conjunto de quatro imagens pré prontas de memes famosos para o usuário escolher. Mostre miniaturas das imagens e, mediante clique do usuário, essa imagem deve aparecer dentro da moldura do elemento de container.
 
